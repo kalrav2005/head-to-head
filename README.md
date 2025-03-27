@@ -69,3 +69,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 To check eslint issue and fix do:
 npx eslint . --fix
+
+We are using Redux with redux-thunk for state management
