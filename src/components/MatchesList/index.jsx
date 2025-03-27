@@ -1,20 +1,17 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import axiosInstance from "../../utils/axiosInstance";
 
 const MatchesList = () => {
   const [matches, setMatches] = useState([]);
 
   useEffect(() => {
-    const fetchMatches = async () => {
-      try {
-        const response = await axios.get("http://localhost:5000/matches"); // 🔗 Call Node API
+    axiosInstance.get("/matches")
+      .then(response => {
         setMatches(response.data);
-      } catch (error) {
+      })
+      .catch(error => {
         console.error("Error fetching matches:", error);
-      }
-    };
-
-    fetchMatches();
+      });
   }, []);
 
   return (

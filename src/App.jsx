@@ -1,11 +1,11 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Matches from "./pages/Matches";
-import ErrorBoundary from "./components/ErrorBoundary";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Matches from './pages/Matches';
+import ErrorBoundary from './components/ErrorBoundary';
 
 const App = () => {
   return (
